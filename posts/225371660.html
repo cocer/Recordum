@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="/css/style.css" />
+
+  <title>
+AcyOrt - 基于 Node.js 博客生成程序 - Recordum
+</title>
+</head>
+
+<body>
+
+<div class="main">
+<div class="inner">
+  
+<div class="header">
+    <a class="logo" href="/">Recordum</a><!--
+
+ --><div class="menu">
+        <a href="/archives/">Archives</a><a href="/about/">About</a>
+    </div>
+
+    <div class="social">
+        <a target="_blank" href="https://github.com/LoeiFy/Recordum/issues"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path>
+</svg></a><!--
+    --><a target="_blank" href="/rss.xml"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path d="M6.18,15.64A2.18,2.18 0 0,1 8.36,17.82C8.36,19 7.38,20 6.18,20C5,20 4,19 4,17.82A2.18,2.18 0 0,1 6.18,15.64M4,4.44A15.56,15.56 0 0,1 19.56,20H16.73A12.73,12.73 0 0,0 4,7.27V4.44M4,10.1A9.9,9.9 0 0,1 13.9,20H11.07A7.07,7.07 0 0,0 4,12.93V10.1Z"></path>
+</svg></a>
+    </div>
+</div>
+
+
+
+
+<div id="post" class="center">
+
+    <p class="time">November 02, 2017</p>
+
+    <h1 class="title">AcyOrt - 基于 Node.js 博客生成程序</h1>
+
+    <div class="content"><p>AcyOrt 是一个基于 Node.js 的博客工具。通过这个工具，用户只要在 issues 上写自己的博客文章，然后一个简单命令就可以产生博客内容。</p>
+<p>项目地址：<a href="https://github.com/acyortjs/acyort">https://github.com/acyortjs/acyort</a></p>
+<h2 id="特色说明">特色说明</h2><p>对比 Hexo，基本上的功能都有了，也差不多。这里主要说一下特别的地方</p>
+<h3 id="多用户支持">多用户支持</h3><p>允许多用户创造，特别适合团队写作，写作用户只要要一个 Github 账号即可。很多大神的 issue 博客就会老是会有人在上面写一些无关内容。只要指定特定写作人，就可以排除掉其他人的无关内容了</p>
+<h3 id="写作方便">写作方便</h3><p>基本上是最简单最舒服的写作方式了，直接在 issue 上写博客，借助 GitHub 强大的 markdown 写作工具，连上传图片都是那么的简单拖放即可，仅仅需要联网浏览器即可</p>
+<h3 id="博客数据">博客数据</h3><p>因为是存放在 GitHub 上，不用担心数据丢失问题，也不用考虑那些 md 文件要保存在哪里，以及迁移问题</p>
+<h3 id="简单安装配置">简单安装配置</h3><p>和 hexo 不同，AcyOrt 只需要 npm 全局安装一次，就可以到处使用了。</p>
+<p>不需要新建一次博客就还要 <code>npm install</code> 一次，一个简单的 <code>acyort init</code> 命令就可以生成一个新的博客了。</p>
+<p>配置文件也只有一个 <code>config.yml</code>，保存所有配置</p>
+<h3 id="自动构建">自动构建</h3><p>AcyOrt 支持 Travis Ci 自动构建，效果就是你在 issue 上写完博客，然后在 GitHub 上点击一个按钮，然后你的博客就更新了。</p>
+<p>不需要 git 操作，不需要自己搭建服务器，也不需要在你本地机器上生成，全程云端生成</p>
+<p>参考：<a href="https://github.com/acyortjs/acyortjs.github.io/issues/13">https://github.com/acyortjs/acyortjs.github.io/issues/13</a> </p>
+<p>以及还有一个视频演示：链接: <a href="https://pan.baidu.com/s/1c2rdynQ">https://pan.baidu.com/s/1c2rdynQ</a> 密码: 6q8q</p>
+<p>甚至你还可以弄一个 webhook，保存 issue 博客同时就可以自动更新博客，什么都不用做。参考这里：<a href="https://github.com/acyortjs/webhook">https://github.com/acyortjs/webhook</a></p>
+<h3 id="主题模板相关">主题模板相关</h3><p>模板基于 <code>swig</code>，集成 <code>liveReload</code>，自动刷新页面，方便主题修改</p>
+<h3 id="json输出">JSON 输出</h3><p>同时支持 json 输出博客内容，方便各种需求</p>
+<h2 id="相关demo">相关 demo</h2><p>一个例子：<a href="http://acyort.am0200.com/">http://acyort.am0200.com/</a></p>
+<p>基于 JSON：<a href="http://aksdj4.am0200.com/">http://aksdj4.am0200.com/</a></p>
+<h2 id="已实现功能">已实现功能</h2><ul>
+<li>文章功能</li><li>评论功能</li><li>RSS 输出</li><li>页面功能</li><li>标签功能</li><li>分类功能</li><li>主题功能</li><li>封面图</li><li>文章目录</li><li>多语言支持</li></ul>
+<h2 id="安装使用说明">安装使用说明</h2><p>安装说明：<a href="https://github.com/acyortjs/acyort#readme">https://github.com/acyortjs/acyort#readme</a></p>
+<p>相关文档：<a href="https://github.com/acyortjs/acyortjs.github.io/issues">https://github.com/acyortjs/acyortjs.github.io/issues</a></p>
+<h2 id="后续功能及说明">后续功能及说明</h2><ul>
+<li>插件支持</li><li>单元测试</li><li>项目网站</li></ul>
+<p>由于功能还没有完全开发完成，一些功能还在修改当中，所以单元测试还没有弄，相关的支持网站相关也在陆续添加</p>
+</div>
+
+    <div class="comments">
+        <div id="disqus_thread"></div>
+    </div>
+
+</div>
+
+
+</div>
+</div>
+
+<div class="footer">
+    <div class="center">Recordum / Powered by <a target="_blank" href="https://github.com/acyortjs/acyort">AcyOrt</a> & <a target="_blank" href="https://github.com">GitHub</a></div>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
