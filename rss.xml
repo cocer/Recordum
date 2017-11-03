@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Recordum]]></title><description><![CDATA[All about Recordum]]></description><link>http://acyort.am0200.com</link><generator>RSS for Node</generator><lastBuildDate>Fri, 03 Nov 2017 08:30:20 GMT</lastBuildDate><atom:link href="http:/acyort.am0200.com/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 03 Nov 2017 08:30:19 GMT</pubDate><item><title><![CDATA[js 使用 setTimeout 排序]]></title><description><![CDATA[<p>原理就是将要排序的数组的每一个项作为 <code>setTimeout</code> 时间参数，然后就可以排序了</p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Recordum]]></title><description><![CDATA[All about Recordum]]></description><link>http://acyort.am0200.com</link><generator>RSS for Node</generator><lastBuildDate>Fri, 03 Nov 2017 08:39:57 GMT</lastBuildDate><atom:link href="http:/acyort.am0200.com/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 03 Nov 2017 08:39:55 GMT</pubDate><item><title><![CDATA[js 使用 setTimeout 排序]]></title><description><![CDATA[<p>原理就是将要排序的数组的每一个项作为 <code>setTimeout</code> 时间参数，然后就可以排序了</p>
 <p>排序时间跟数组最大值绝对值有关 :)</p>
 <p>需要对数组的负数项做一下处理，因为 <code>setTimeout</code> 参数负数的话跟参数 0 是一样的</p>
 <p>例子 <a href="https://jsfiddle.net/am0200/o0sz55pq/">JSFiddle</a></p>
-<p>具体代码说明:</p>
+<p>具体代码说明</p>
 <pre><code>&#x2F;&#x2F; 需要排序数组
 const numbers &#x3D; [8, 0, 3, -1, 9, -3, -767, 4, 111, 999, 89];
 
@@ -37,7 +37,7 @@ function sort(arr) {
 })()
 
 &#x2F;&#x2F; 排序结果: [-767, -3, -1, 0, 3, 4, 8, 9, 89, 111, 999]</code></pre><p>最后说明一下，这只是一种特别的排序方式，请不要去纠结效率时间等其他问题</p>
-]]></description><link>http:/acyort.am0200.com/posts/244718742.html</link><guid isPermaLink="true">http:/acyort.am0200.com/posts/244718742.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Fri, 03 Nov 2017 08:30:03 GMT</pubDate></item><item><title><![CDATA[AcyOrt - 基于 Node.js 博客生成程序]]></title><description><![CDATA[<p>AcyOrt 是一个基于 Node.js 的博客工具。通过这个工具，用户只要在 issues 上写自己的博客文章，然后一个简单命令就可以产生博客内容。</p>
+]]></description><link>http:/acyort.am0200.com/posts/244718742.html</link><guid isPermaLink="true">http:/acyort.am0200.com/posts/244718742.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Fri, 03 Nov 2017 08:39:41 GMT</pubDate></item><item><title><![CDATA[AcyOrt - 基于 Node.js 博客生成程序]]></title><description><![CDATA[<p>AcyOrt 是一个基于 Node.js 的博客工具。通过这个工具，用户只要在 issues 上写自己的博客文章，然后一个简单命令就可以产生博客内容。</p>
 <p>&lt;!-- more --&gt;
 </p>
 <p>项目地址：<a href="https://github.com/acyortjs/acyort">https://github.com/acyortjs/acyort</a></p>
