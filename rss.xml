@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Recordum]]></title><description><![CDATA[All about Recordum]]></description><link>http://acyort.am0200.com</link><generator>RSS for Node</generator><lastBuildDate>Sat, 16 Dec 2017 07:08:22 GMT</lastBuildDate><atom:link href="http:/acyort.am0200.com/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 16 Dec 2017 07:08:20 GMT</pubDate><item><title><![CDATA[js 使用 setTimeout 排序]]></title><description><![CDATA[<p>原理就是将要排序的数组的每一个项作为 <code>setTimeout</code> 时间参数，然后就可以排序了</p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Recordum]]></title><description><![CDATA[All about Recordum]]></description><link>http://acyort.am0200.com</link><generator>RSS for Node</generator><lastBuildDate>Sat, 16 Dec 2017 07:08:40 GMT</lastBuildDate><atom:link href="http:/acyort.am0200.com/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 16 Dec 2017 07:08:38 GMT</pubDate><item><title><![CDATA[js 使用 setTimeout 排序]]></title><description><![CDATA[<p>原理就是将要排序的数组的每一个项作为 <code>setTimeout</code> 时间参数，然后就可以排序了</p>
 <p>排序时间跟数组最大值绝对值有关 :)</p>
 <p>需要对数组的负数项做一下处理，因为 <code>setTimeout</code> 参数负数的话跟参数 0 是一样的</p>
 <p>例子 <a href="https://jsfiddle.net/am0200/o0sz55pq/">JSFiddle</a></p>
@@ -211,7 +211,7 @@ routes.forEach((route) &#x3D;&gt; {
 </blockquote>
 <p>这个就直接使用服务端 404 页面了，如果是用 <code>GitHub pages</code> 的话，我们可以直接生成一个 <code>404.html</code> 即可。或者是将 404 路由跳转到首页</p>
 <p>还有一种做法，直接把 404 页面弄成跟 index 内容一样，404 时候就是正常的内容页面，这时候页面功能是正常的，并且不需要前面的一对做法了。</p>
-]]></description><link>http:/acyort.am0200.com/posts/210285498.html</link><guid isPermaLink="true">http:/acyort.am0200.com/posts/210285498.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Thu, 16 Mar 2017 07:49:41 GMT</pubDate></item><item><title><![CDATA[记录一下折腾黑苹果过程]]></title><description><![CDATA[<p>也算是完成了读书时候的心愿，以前读书时候老想着弄个黑苹果，但是一直没有成功。最近折腾安装前后花的时间就两三天那样，参考了一堆前人经验，所以不会很折腾，总体上算是完美的</p>
+]]></description><link>http:/acyort.am0200.com/posts/210285498.html</link><guid isPermaLink="true">http:/acyort.am0200.com/posts/210285498.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Sat, 16 Dec 2017 07:08:26 GMT</pubDate></item><item><title><![CDATA[记录一下折腾黑苹果过程]]></title><description><![CDATA[<p>也算是完成了读书时候的心愿，以前读书时候老想着弄个黑苹果，但是一直没有成功。最近折腾安装前后花的时间就两三天那样，参考了一堆前人经验，所以不会很折腾，总体上算是完美的</p>
 <p>&lt;!-- more --&gt;
 </p>
 <h2>黑苹果情况</h2><p><img src="https://cloud.githubusercontent.com/assets/2193211/22615077/d8cde9de-eac7-11e6-98be-6531cc36bc61.png" alt="screen shot 2017-02-04 at 10 30 35 am"></p>
