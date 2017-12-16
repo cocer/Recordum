@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Recordum]]></title><description><![CDATA[All about Recordum]]></description><link>http://acyort.am0200.com</link><generator>RSS for Node</generator><lastBuildDate>Sat, 16 Dec 2017 07:08:40 GMT</lastBuildDate><atom:link href="http:/acyort.am0200.com/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 16 Dec 2017 07:08:38 GMT</pubDate><item><title><![CDATA[js 使用 setTimeout 排序]]></title><description><![CDATA[<p>原理就是将要排序的数组的每一个项作为 <code>setTimeout</code> 时间参数，然后就可以排序了</p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Recordum]]></title><description><![CDATA[All about Recordum]]></description><link>http://acyort.am0200.com</link><generator>RSS for Node</generator><lastBuildDate>Sat, 16 Dec 2017 07:08:56 GMT</lastBuildDate><atom:link href="http:/acyort.am0200.com/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 16 Dec 2017 07:08:55 GMT</pubDate><item><title><![CDATA[js 使用 setTimeout 排序]]></title><description><![CDATA[<p>原理就是将要排序的数组的每一个项作为 <code>setTimeout</code> 时间参数，然后就可以排序了</p>
 <p>排序时间跟数组最大值绝对值有关 :)</p>
 <p>需要对数组的负数项做一下处理，因为 <code>setTimeout</code> 参数负数的话跟参数 0 是一样的</p>
 <p>例子 <a href="https://jsfiddle.net/am0200/o0sz55pq/">JSFiddle</a></p>
@@ -504,7 +504,7 @@ window.config &#x3D; {&quot;title&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quo
 &lt;&#x2F;script&gt;</code></pre><p>配置好后，可以先尝试本地预览，需要一个本地服务器，放上去访问 <code>index.html</code> 即可，测试没问题就可以把全部文件上传到对应地址即可，也可以放到 GitHub pages 上</p>
 <h2>名字来源</h2><p><code>Mirror</code> 是 <code>DJ Okawari</code> 所作的专辑</p>
 <p><img src="https://cloud.githubusercontent.com/assets/2193211/12321915/c66d8b12-baeb-11e5-9612-b188f5272e3b.jpg" alt="mirror"></p>
-]]></description><link>http:/acyort.am0200.com/posts/126817142.html</link><guid isPermaLink="true">http:/acyort.am0200.com/posts/126817142.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Mon, 13 Nov 2017 06:58:46 GMT</pubDate></item><item><title><![CDATA[输入框输入值自动格式化]]></title><description><![CDATA[<p>这里说的自动格式化是指当用户在输入框里面输入数字，例如银行卡号，为了方便用户输入，希望在输入过程中对输入数字进行加空格处理，优化用户体验</p>
+]]></description><link>http:/acyort.am0200.com/posts/126817142.html</link><guid isPermaLink="true">http:/acyort.am0200.com/posts/126817142.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Sat, 16 Dec 2017 07:08:42 GMT</pubDate></item><item><title><![CDATA[输入框输入值自动格式化]]></title><description><![CDATA[<p>这里说的自动格式化是指当用户在输入框里面输入数字，例如银行卡号，为了方便用户输入，希望在输入过程中对输入数字进行加空格处理，优化用户体验</p>
 <p>&lt;!-- more --&gt;
 </p>
 <p>先看一下例子: <a href="http://jsfiddle.net/am0200/qugp8tvL/">http://jsfiddle.net/am0200/qugp8tvL/</a></p>
@@ -542,7 +542,7 @@ input.oninput &#x3D; function() {
   }.bind(this), 0)
 }</code></pre><p>获取输入原始值</p>
 <pre><code>input.value.replace(&#x2F;\s+&#x2F;g, &#39;&#39;)</code></pre><h3>扩展</h3><p>可以设置格式化分割字符，例如用 <code>-</code> 代替空格，还可以设定不规则位数空格，具体可以修改处理条件即可</p>
-]]></description><link>http:/acyort.am0200.com/posts/71470122.html</link><guid isPermaLink="true">http:/acyort.am0200.com/posts/71470122.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Fri, 12 May 2017 03:21:22 GMT</pubDate></item><item><title><![CDATA[创建类似 http://ithinkimight.com/ 随机大小排布界面]]></title><description><![CDATA[<p><code>ithinkimight.com</code> 这个网站图片来自 Instagram，图片随机大小，位置也是随机，图片可以重叠，但是并没有 <strong>过分</strong> 重叠。这种随机大小，位置排版页面元素跟平常的整齐 <code>grid</code> 或者 <code>瀑布流</code> 风格很不一样，下面我们尝试一下实现类似效果</p>
+]]></description><link>http:/acyort.am0200.com/posts/71470122.html</link><guid isPermaLink="true">http:/acyort.am0200.com/posts/71470122.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Sat, 16 Dec 2017 07:08:52 GMT</pubDate></item><item><title><![CDATA[创建类似 http://ithinkimight.com/ 随机大小排布界面]]></title><description><![CDATA[<p><code>ithinkimight.com</code> 这个网站图片来自 Instagram，图片随机大小，位置也是随机，图片可以重叠，但是并没有 <strong>过分</strong> 重叠。这种随机大小，位置排版页面元素跟平常的整齐 <code>grid</code> 或者 <code>瀑布流</code> 风格很不一样，下面我们尝试一下实现类似效果</p>
 <p>&lt;!-- more --&gt;
 </p>
 <p>从网站源文件上看并不能看出网站是如何随机排布这些图片，因为是后端直接输出图片的位置参数，并不是前端实现的位置计算。不过这里有一种简单方法，可以实现类似效果。先看一下具体效果</p>
