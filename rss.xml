@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Recordum]]></title><description><![CDATA[All about Recordum]]></description><link>http://acyort.am0200.com</link><generator>RSS for Node</generator><lastBuildDate>Sat, 09 Dec 2017 05:00:04 GMT</lastBuildDate><atom:link href="http:/acyort.am0200.com/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 09 Dec 2017 05:00:02 GMT</pubDate><item><title><![CDATA[js 使用 setTimeout 排序]]></title><description><![CDATA[<p>原理就是将要排序的数组的每一个项作为 <code>setTimeout</code> 时间参数，然后就可以排序了</p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Recordum]]></title><description><![CDATA[All about Recordum]]></description><link>http://acyort.am0200.com</link><generator>RSS for Node</generator><lastBuildDate>Sat, 16 Dec 2017 07:08:04 GMT</lastBuildDate><atom:link href="http:/acyort.am0200.com/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 16 Dec 2017 07:08:03 GMT</pubDate><item><title><![CDATA[js 使用 setTimeout 排序]]></title><description><![CDATA[<p>原理就是将要排序的数组的每一个项作为 <code>setTimeout</code> 时间参数，然后就可以排序了</p>
 <p>排序时间跟数组最大值绝对值有关 :)</p>
 <p>需要对数组的负数项做一下处理，因为 <code>setTimeout</code> 参数负数的话跟参数 0 是一样的</p>
 <p>例子 <a href="https://jsfiddle.net/am0200/o0sz55pq/">JSFiddle</a></p>
@@ -37,7 +37,7 @@ function sort(arr) {
 })()
 
 &#x2F;&#x2F; 排序结果: [-767, -3, -1, 0, 3, 4, 8, 9, 89, 111, 999]</code></pre><p>最后说明一下，这只是一种特别的排序方式，请不要去纠结效率时间等其他问题</p>
-]]></description><link>http:/acyort.am0200.com/posts/244718742.html</link><guid isPermaLink="true">http:/acyort.am0200.com/posts/244718742.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Sat, 09 Dec 2017 04:59:46 GMT</pubDate></item><item><title><![CDATA[AcyOrt - 基于 Node.js 博客生成程序]]></title><description><![CDATA[<p>AcyOrt 是一个基于 Node.js 的博客工具。通过这个工具，用户只要在 issues 上写自己的博客文章，然后一个简单命令就可以产生博客内容。</p>
+]]></description><link>http:/acyort.am0200.com/posts/244718742.html</link><guid isPermaLink="true">http:/acyort.am0200.com/posts/244718742.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Sat, 16 Dec 2017 07:07:48 GMT</pubDate></item><item><title><![CDATA[AcyOrt - 基于 Node.js 博客生成程序]]></title><description><![CDATA[<p>AcyOrt 是一个基于 Node.js 的博客工具。通过这个工具，用户只要在 issues 上写自己的博客文章，然后一个简单命令就可以产生博客内容。</p>
 <p>&lt;!-- more --&gt;
 </p>
 <p>项目地址：<a href="https://github.com/acyortjs/acyort">https://github.com/acyortjs/acyort</a></p>
@@ -77,7 +77,7 @@ function sort(arr) {
 <li>项目网站</li>
 </ul>
 <p>由于功能还没有完全开发完成，一些功能还在修改当中，所以单元测试还没有弄，相关的支持网站相关也在陆续添加</p>
-]]></description><link>http:/acyort.am0200.com/posts/225371660.html</link><guid isPermaLink="true">http:/acyort.am0200.com/posts/225371660.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Thu, 02 Nov 2017 06:41:48 GMT</pubDate></item><item><title><![CDATA[Vue JSON 博客(AcyOrt/Vue/Vuex/Webpack)]]></title><description><![CDATA[<p>尝试使用 <a href="https://github.com/acyortjs/acyort">AcyOrt </a> 的 JSON 输出功能构建一个博客，顺便用了 vue + webpack 组合开发。</p>
+]]></description><link>http:/acyort.am0200.com/posts/225371660.html</link><guid isPermaLink="true">http:/acyort.am0200.com/posts/225371660.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Sat, 16 Dec 2017 07:08:03 GMT</pubDate></item><item><title><![CDATA[Vue JSON 博客(AcyOrt/Vue/Vuex/Webpack)]]></title><description><![CDATA[<p>尝试使用 <a href="https://github.com/acyortjs/acyort">AcyOrt </a> 的 JSON 输出功能构建一个博客，顺便用了 vue + webpack 组合开发。</p>
 <p>DEMO: <a href="http://aksdj4.am0200.com/">http://aksdj4.am0200.com/</a></p>
 <p>项目地址: <a href="https://github.com/acyortjs/aksdj4">https://github.com/acyortjs/aksdj4</a></p>
 <h3>内容 JSON</h3><p>使用  <a href="https://github.com/acyortjs/acyort">AcyOrt </a> 将项目 <a href="https://github.com/LoeiFy/Recordum/issues">Recordum</a> issue 生成 JSON: <a href="https://github.com/acyortjs/aksdj4/tree/gh-pages/json">https://github.com/acyortjs/aksdj4/tree/gh-pages/json</a></p>
