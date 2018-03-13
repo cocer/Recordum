@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="keywords" content="" />
+<meta name="description" content="All about Recordum" />
 <link rel="stylesheet" href="/css/style.css" />
 
   <title>
@@ -15,8 +15,7 @@
 <body>
 
 <div class="main">
-<div class="inner">
-  
+
 <div class="header">
     <a class="logo" href="/">Recordum</a><!--
 
@@ -28,7 +27,7 @@
         <a target="_blank" href="https://github.com/LoeiFy/Recordum/issues"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path>
 </svg></a><!--
-    --><a target="_blank" href="/rss.xml"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    --><a target="_blank" href="/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 <path d="M6.18,15.64A2.18,2.18 0 0,1 8.36,17.82C8.36,19 7.38,20 6.18,20C5,20 4,19 4,17.82A2.18,2.18 0 0,1 6.18,15.64M4,4.44A15.56,15.56 0 0,1 19.56,20H16.73A12.73,12.73 0 0,0 4,7.27V4.44M4,10.1A9.9,9.9 0 0,1 13.9,20H11.07A7.07,7.07 0 0,0 4,12.93V10.1Z"></path>
 </svg></a>
     </div>
@@ -36,14 +35,10 @@
 
 
 
-
 <div id="post" class="center">
-
-    <p class="time">March 17, 2017</p>
-
-    <h1 class="title">记录一下折腾黑苹果过程</h1>
-
-    <div class="content"><p>也算是完成了读书时候的心愿，以前读书时候老想着弄个黑苹果，但是一直没有成功。最近折腾安装前后花的时间就两三天那样，参考了一堆前人经验，所以不会很折腾，总体上算是完美的</p>
+  <p class="time">February 04, 2017</p>
+  <h1 class="title">记录一下折腾黑苹果过程</h1>
+  <div class="content"><p>也算是完成了读书时候的心愿，以前读书时候老想着弄个黑苹果，但是一直没有成功。最近折腾安装前后花的时间就两三天那样，参考了一堆前人经验，所以不会很折腾，总体上算是完美的</p>
 <h2 id="黑苹果情况">黑苹果情况</h2><p><img src="https://cloud.githubusercontent.com/assets/2193211/22615077/d8cde9de-eac7-11e6-98be-6531cc36bc61.png" alt="screen shot 2017-02-04 at 10 30 35 am"></p>
 <h3 id="正常部分">正常部分</h3><ul>
 <li>显卡(HD530)，声卡，网卡驱动正常</li><li>USB 3 识别正常</li><li>CPU 可以变频</li><li>SSD TRIM 正常</li></ul>
@@ -78,12 +73,12 @@
 </blockquote>
 <p>使用 <code>Clover Configurator</code> mount EFI 分区，用 sublime 打开 EFI/CLOVER/config.plist，添加对应字段</p>
 
-    <div class="hljs xml">
-      <table>
-        <tbody>
-          <tr>
-            <td class="line">
-              <pre><span>1</span>
+      <div class="hljs xml">
+        <table>
+          <tbody>
+            <tr>
+              <td class="line">
+                <pre><span>1</span>
 <span>2</span>
 <span>3</span>
 <span>4</span>
@@ -184,8 +179,8 @@
 <span>99</span>
 <span>100</span>
 </pre>
-            </td>
-            <td class="code"><pre><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span><span class="hljs-meta">?&gt;</span></span>
+              </td>
+              <td class="code"><pre><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span><span class="hljs-meta">?&gt;</span></span>
 <span class="hljs-meta">&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">plist</span> <span class="hljs-attr">version</span>=<span class="hljs-string">"1.0"</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">dict</span>&gt;</span>
@@ -285,11 +280,11 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">dict</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">dict</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">plist</span>&gt;</span></pre></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  <blockquote>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    <blockquote>
 <p>kexts</p>
 </blockquote>
 <p>复制 <code>FakeSMC.kext</code>, <code>RealtekRTL8111.kext</code>, <code>VoodooHDA.kext</code> 到 EFI/CLOVER／kexts／other</p>
@@ -298,37 +293,37 @@
 </blockquote>
 <p>输入相关命令重启即可</p>
 
-    <div class="hljs bash">
-      <table>
-        <tbody>
-          <tr>
-            <td class="line">
-              <pre><span>1</span>
+      <div class="hljs bash">
+        <table>
+          <tbody>
+            <tr>
+              <td class="line">
+                <pre><span>1</span>
 </pre>
-            </td>
-            <td class="code"><pre>sudo trimforce <span class="hljs-built_in">enable</span></pre></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  <blockquote>
+              </td>
+              <td class="code"><pre>sudo trimforce <span class="hljs-built_in">enable</span></pre></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    <blockquote>
 <p>默认启动 </p>
 </blockquote>
 <p>config.plist／Boot/DefaultVolume 的 ‘值’ 改成你的启动盘(Sierra)，默认为 macHDD</p>
 </div>
-
-    <div class="comments">
-        <div id="disqus_thread"></div>
-    </div>
-
+  <div class="comments"><div id="disqus_thread"></div></div>
 </div>
 
 
-</div>
 </div>
 
 <div class="footer">
-    <div class="center">Recordum / Powered by <a target="_blank" href="https://github.com/acyortjs/acyort">AcyOrt</a> & <a target="_blank" href="https://github.com">GitHub</a></div>
+    <div class="center">
+      Recordum / Powered by
+      <a target="_blank" href="https://github.com/acyortjs/acyort">AcyOrt</a>
+      &
+      <a target="_blank" href="https://github.com">GitHub</a>
+    </div>
 </div>
 
 
