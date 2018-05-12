@@ -1,0 +1,396 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="All about Recordum" />
+<link rel="stylesheet" href="/css/style.css" />
+
+  <title>
+关于浏览器直接使用 ES6 的一些简单介绍 - Recordum
+</title>
+</head>
+
+<body>
+
+<div class="main">
+
+<div class="header">
+    <a class="logo" href="/">Recordum</a><!--
+
+ --><div class="menu">
+        <a href="/archives/">Archives</a><a href="/about/">About</a>
+    </div>
+
+    <div class="social">
+        <a target="_blank" href="https://github.com/LoeiFy/Recordum/issues"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path>
+</svg></a><!--
+    --><a target="_blank" href="/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path d="M6.18,15.64A2.18,2.18 0 0,1 8.36,17.82C8.36,19 7.38,20 6.18,20C5,20 4,19 4,17.82A2.18,2.18 0 0,1 6.18,15.64M4,4.44A15.56,15.56 0 0,1 19.56,20H16.73A12.73,12.73 0 0,0 4,7.27V4.44M4,10.1A9.9,9.9 0 0,1 13.9,20H11.07A7.07,7.07 0 0,0 4,12.93V10.1Z"></path>
+</svg></a>
+        
+    </div>
+</div>
+
+
+<div id="post" class="center">
+  <p class="time">May 12, 2018</p>
+  <h1 class="title">关于浏览器直接使用 ES6 的一些简单介绍</h1>
+  <div class="content"><p>在浏览器端直接运行 ES6 代码通常可以这样做</p>
+<p>首先引入 <code>babel-standalone</code></p>
+
+      <div class="hljs html">
+        <table>
+          <tbody>
+            <tr>
+              <td class="line">
+                <pre><span>1</span>
+</pre>
+              </td>
+              <td class="code"><pre><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/babel-standalone@6.26.0/babel.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></pre></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    <p>然后就可以直接写 ES6 代码了</p>
+
+      <div class="hljs html">
+        <table>
+          <tbody>
+            <tr>
+              <td class="line">
+                <pre><span>1</span>
+<span>2</span>
+<span>3</span>
+<span>4</span>
+<span>5</span>
+<span>6</span>
+<span>7</span>
+<span>8</span>
+<span>9</span>
+<span>10</span>
+</pre>
+              </td>
+              <td class="code"><pre><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/babel"</span>&gt;</span><span class="javascript">
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>.a = <span class="hljs-number">0</span>
+  }
+  log() {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.a)
+  }
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></pre></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    <p>当然也可以直接写 React JSX 相关</p>
+
+      <div class="hljs html">
+        <table>
+          <tbody>
+            <tr>
+              <td class="line">
+                <pre><span>1</span>
+<span>2</span>
+<span>3</span>
+<span>4</span>
+<span>5</span>
+<span>6</span>
+<span>7</span>
+<span>8</span>
+<span>9</span>
+<span>10</span>
+<span>11</span>
+</pre>
+              </td>
+              <td class="code"><pre><span class="hljs-comment">&lt;!-- 需要引入 React 相关 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">crossorigin</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/react@16/umd/react.production.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">crossorigin</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/babel"</span>&gt;</span><span class="javascript">
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>JSX<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+, <span class="hljs-built_in">document</span>.body)
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></pre></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    <p>还可以文件引入方式来写 ES6 代码</p>
+
+      <div class="hljs html">
+        <table>
+          <tbody>
+            <tr>
+              <td class="line">
+                <pre><span>1</span>
+</pre>
+              </td>
+              <td class="code"><pre><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/babel"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/main.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></pre></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    <p>通常要写一些更高级的 js 特性，还需要添加 <code>babel-standalone</code> 一些插件，例如需要支持 <code>class properties</code> 这时候需要这样做</p>
+
+      <div class="hljs html">
+        <table>
+          <tbody>
+            <tr>
+              <td class="line">
+                <pre><span>1</span>
+<span>2</span>
+<span>3</span>
+<span>4</span>
+<span>5</span>
+<span>6</span>
+<span>7</span>
+<span>8</span>
+</pre>
+              </td>
+              <td class="code"><pre><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/babel"</span> <span class="hljs-attr">data-plugins</span>=<span class="hljs-string">"transform-class-properties"</span>&gt;</span><span class="javascript">
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bork</span> </span>{
+  instanceProperty = <span class="hljs-string">"bork"</span>;
+  boundFunction = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.instanceProperty;
+  }
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></pre></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    <p>如果需要 <code>import</code> 其他模块，还需要引入 <code>es2015-modules-umd</code> 插件。插件列表可以参考这里：<a href="https://babeljs.io/docs/plugins/">https://babeljs.io/docs/plugins/</a></p>
+
+      <div class="hljs html">
+        <table>
+          <tbody>
+            <tr>
+              <td class="line">
+                <pre><span>1</span>
+<span>2</span>
+<span>3</span>
+<span>4</span>
+<span>5</span>
+<span>6</span>
+<span>7</span>
+<span>8</span>
+<span>9</span>
+<span>10</span>
+<span>11</span>
+<span>12</span>
+</pre>
+              </td>
+              <td class="code"><pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/babel"</span> <span class="hljs-attr">data-plugins</span>=<span class="hljs-string">"transform-class-properties transform-es2015-modules-umd"</span>&gt;</span><span class="actionscript">
+<span class="hljs-meta"><span class="hljs-meta-keyword">import</span> </span></span></span><span class="hljs-template-variable">{ Breadcrumb }</span><span class="xml"><span class="handlebars"><span class="xml"> from 'antd';
+
+ReactDOM.render(
+  <span class="hljs-tag">&lt;<span class="hljs-name">Breadcrumb</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Breadcrumb.Item</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">Breadcrumb.Item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Breadcrumb.Item</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span>Application Center<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Breadcrumb.Item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Breadcrumb.Item</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span>Application List<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Breadcrumb.Item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Breadcrumb.Item</span>&gt;</span>An Application<span class="hljs-tag">&lt;/<span class="hljs-name">Breadcrumb.Item</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">Breadcrumb</span>&gt;</span>
+, mountNode);
+</span></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span></pre></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    <p>接下来写一些稍微 <code>正式</code> 的代码</p>
+
+      <div class="hljs html">
+        <table>
+          <tbody>
+            <tr>
+              <td class="line">
+                <pre><span>1</span>
+<span>2</span>
+<span>3</span>
+<span>4</span>
+<span>5</span>
+<span>6</span>
+<span>7</span>
+<span>8</span>
+<span>9</span>
+<span>10</span>
+<span>11</span>
+<span>12</span>
+<span>13</span>
+<span>14</span>
+<span>15</span>
+<span>16</span>
+<span>17</span>
+<span>18</span>
+<span>19</span>
+<span>20</span>
+<span>21</span>
+<span>22</span>
+<span>23</span>
+</pre>
+              </td>
+              <td class="code"><pre><span class="hljs-comment">&lt;!-- 同样引入 React 相关 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">crossorigin</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/react@16/umd/react.production.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">crossorigin</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/babel"</span> <span class="hljs-attr">data-plugins</span>=<span class="hljs-string">"transform-class-properties transform-es2015-modules-umd"</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom'</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Editor</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+<span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  <span class="hljs-comment">// ...</span>
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Editor</span> {<span class="hljs-attr">...this.props</span>} /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    )
+  }
+}
+</span></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></pre></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    <p>不出意外，<code>console</code> 会得到一些类似错误提示</p>
+
+      <div class="hljs">
+        <table>
+          <tbody>
+            <tr>
+              <td class="line">
+                <pre><span>1</span>
+</pre>
+              </td>
+              <td class="code"><pre>Uncaught TypeError: Cannot read property &#39;Component&#39; of undefined</pre></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    <p>通过测试试验，出现这样提示是因为引入的模块 <code>umd</code> 打包出来不符合标准，根据 <code>umd</code> 标准，<code>react</code> 的 libraryName 应该为 <code>react</code>，而不是 <code>React</code>。同样 <code>react-dom</code> 的 libraryName 应该为 <code>reactDom</code> 而不是 <code>ReactDOM</code></p>
+<p>所以解决办法也很简单，加上对应 libraryName 的定义即可</p>
+
+      <div class="hljs html">
+        <table>
+          <tbody>
+            <tr>
+              <td class="line">
+                <pre><span>1</span>
+<span>2</span>
+<span>3</span>
+<span>4</span>
+<span>5</span>
+<span>6</span>
+<span>7</span>
+<span>8</span>
+<span>9</span>
+<span>10</span>
+<span>11</span>
+</pre>
+              </td>
+              <td class="code"><pre><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">crossorigin</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/react@16/umd/react.production.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">crossorigin</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+<span class="hljs-built_in">window</span>[<span class="hljs-string">'react'</span>] = <span class="hljs-built_in">window</span>.React
+<span class="hljs-built_in">window</span>[<span class="hljs-string">'reactDom'</span>] = <span class="hljs-built_in">window</span>.ReactDOM
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/babel"</span> <span class="hljs-attr">data-plugins</span>=<span class="hljs-string">"transform-class-properties transform-es2015-modules-umd"</span>&gt;</span><span class="actionscript">
+<span class="hljs-comment">// ...</span>
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></pre></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    <p>同样，当我们需要引入 <code>react-router</code> 时候，同样也需要做对应处理</p>
+
+      <div class="hljs javascript">
+        <table>
+          <tbody>
+            <tr>
+              <td class="line">
+                <pre><span>1</span>
+<span>2</span>
+</pre>
+              </td>
+              <td class="code"><pre><span class="hljs-built_in">window</span>[<span class="hljs-string">'reactRouterDom'</span>] = <span class="hljs-built_in">window</span>.ReactRouterDOM
+<span class="hljs-built_in">window</span>[<span class="hljs-string">'reactRouter'</span>] = <span class="hljs-built_in">window</span>.ReactRouter</pre></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    <p>最后，总结一下浏览器写 ES6 + React <code>模板</code></p>
+
+      <div class="hljs html">
+        <table>
+          <tbody>
+            <tr>
+              <td class="line">
+                <pre><span>1</span>
+<span>2</span>
+<span>3</span>
+<span>4</span>
+<span>5</span>
+<span>6</span>
+<span>7</span>
+<span>8</span>
+<span>9</span>
+<span>10</span>
+<span>11</span>
+<span>12</span>
+<span>13</span>
+</pre>
+              </td>
+              <td class="code"><pre><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">crossorigin</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/react@16/umd/react.production.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">crossorigin</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">crossorigin</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/react-router-dom@4.2.2/umd/react-router-dom.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+<span class="hljs-built_in">window</span>[<span class="hljs-string">'react'</span>] = <span class="hljs-built_in">window</span>.React
+<span class="hljs-built_in">window</span>[<span class="hljs-string">'reactDom'</span>] = <span class="hljs-built_in">window</span>.ReactDOM
+<span class="hljs-built_in">window</span>[<span class="hljs-string">'reactRouterDom'</span>] = <span class="hljs-built_in">window</span>.ReactRouterDOM
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/babel"</span> <span class="hljs-attr">data-plugins</span>=<span class="hljs-string">"transform-class-properties transform-es2015-modules-umd"</span>&gt;</span><span class="actionscript">
+<span class="hljs-comment">// ...</span>
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></pre></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    <p>可能会有疑问：为什么要在浏览器做这样事情，为什么不直接用 <code>webpack</code> 之类的。这里说明一下，正常情况下我们的 webapp 是不应该这样子做，应该预先打包后发布。所以这种浏览器处理方式的使用场景是在展示，测试一些小 demo 时候使用的</p>
+</div>
+  <div class="comments"><div id="disqus_thread"></div></div>
+</div>
+
+
+</div>
+
+<div class="footer">
+    <div class="center">
+      Recordum / Powered by
+      <a target="_blank" href="https://github.com/acyortjs/acyort">AcyOrt</a> /
+      Theme
+      <a target="_blank" href="https://github.com/acyortjs/theme-donob">donob</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,4 +1,100 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Recordum]]></title><description><![CDATA[All about Recordum]]></description><link>https://acyort.am0200.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 23 Apr 2018 13:08:09 GMT</lastBuildDate><atom:link href="https:/acyort.am0200.com/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 23 Apr 2018 13:08:09 GMT</pubDate><item><title><![CDATA[使用 setTimeout 排序]]></title><description><![CDATA[<p>原理就是将要排序的数组的每一个项作为 <code>setTimeout</code> 时间参数，然后就可以排序了</p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Recordum]]></title><description><![CDATA[All about Recordum]]></description><link>https://acyort.am0200.com</link><generator>RSS for Node</generator><lastBuildDate>Sat, 12 May 2018 05:47:20 GMT</lastBuildDate><atom:link href="https:/acyort.am0200.com/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 12 May 2018 05:47:20 GMT</pubDate><item><title><![CDATA[关于浏览器直接使用 ES6 的一些简单介绍]]></title><description><![CDATA[<p>在浏览器端直接运行 ES6 代码通常可以这样做</p>
+<p>首先引入 <code>babel-standalone</code></p>
+<pre><code>&lt;script src&#x3D;&quot;https:&#x2F;&#x2F;unpkg.com&#x2F;babel-standalone@6.26.0&#x2F;babel.min.js&quot;&gt;&lt;&#x2F;script&gt;</code></pre><p>然后就可以直接写 ES6 代码了</p>
+<pre><code>&lt;script type&#x3D;&quot;text&#x2F;babel&quot;&gt;
+class A {
+  constructor() {
+    this.a &#x3D; 0
+  }
+  log() {
+    console.log(this.a)
+  }
+}
+&lt;&#x2F;script&gt;</code></pre><p>当然也可以直接写 React JSX 相关</p>
+<pre><code>&lt;!-- 需要引入 React 相关 --&gt;
+&lt;script crossorigin src&#x3D;&quot;https:&#x2F;&#x2F;unpkg.com&#x2F;react@16&#x2F;umd&#x2F;react.production.min.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;script crossorigin src&#x3D;&quot;https:&#x2F;&#x2F;unpkg.com&#x2F;react-dom@16&#x2F;umd&#x2F;react-dom.production.min.js&quot;&gt;&lt;&#x2F;script&gt;
+
+&lt;script type&#x3D;&quot;text&#x2F;babel&quot;&gt;
+ReactDOM.render(
+  &lt;div&gt;
+    &lt;h1&gt;JSX&lt;&#x2F;h1&gt;
+  &lt;&#x2F;div&gt;
+, document.body)
+&lt;&#x2F;script&gt;</code></pre><p>还可以文件引入方式来写 ES6 代码</p>
+<pre><code>&lt;script type&#x3D;&quot;text&#x2F;babel&quot; src&#x3D;&quot;&#x2F;main.js&quot;&gt;&lt;&#x2F;script&gt;</code></pre><p>通常要写一些更高级的 js 特性，还需要添加 <code>babel-standalone</code> 一些插件，例如需要支持 <code>class properties</code> 这时候需要这样做</p>
+<pre><code>&lt;script type&#x3D;&quot;text&#x2F;babel&quot; data-plugins&#x3D;&quot;transform-class-properties&quot;&gt;
+class Bork {
+  instanceProperty &#x3D; &quot;bork&quot;;
+  boundFunction &#x3D; () &#x3D;&gt; {
+    return this.instanceProperty;
+  }
+}
+&lt;&#x2F;script&gt;</code></pre><p>如果需要 <code>import</code> 其他模块，还需要引入 <code>es2015-modules-umd</code> 插件。插件列表可以参考这里：<a href="https://babeljs.io/docs/plugins/">https://babeljs.io/docs/plugins/</a></p>
+<pre><code>&lt;script type&#x3D;&quot;text&#x2F;babel&quot; data-plugins&#x3D;&quot;transform-class-properties transform-es2015-modules-umd&quot;&gt;
+import { Breadcrumb } from &#39;antd&#39;;
+
+ReactDOM.render(
+  &lt;Breadcrumb&gt;
+    &lt;Breadcrumb.Item&gt;Home&lt;&#x2F;Breadcrumb.Item&gt;
+    &lt;Breadcrumb.Item&gt;&lt;a href&#x3D;&quot;&quot;&gt;Application Center&lt;&#x2F;a&gt;&lt;&#x2F;Breadcrumb.Item&gt;
+    &lt;Breadcrumb.Item&gt;&lt;a href&#x3D;&quot;&quot;&gt;Application List&lt;&#x2F;a&gt;&lt;&#x2F;Breadcrumb.Item&gt;
+    &lt;Breadcrumb.Item&gt;An Application&lt;&#x2F;Breadcrumb.Item&gt;
+  &lt;&#x2F;Breadcrumb&gt;
+, mountNode);
+&lt;&#x2F;script&gt;</code></pre><p>接下来写一些稍微 <code>正式</code> 的代码</p>
+<pre><code>&lt;!-- 同样引入 React 相关 --&gt;
+&lt;script crossorigin src&#x3D;&quot;https:&#x2F;&#x2F;unpkg.com&#x2F;react@16&#x2F;umd&#x2F;react.production.min.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;script crossorigin src&#x3D;&quot;https:&#x2F;&#x2F;unpkg.com&#x2F;react-dom@16&#x2F;umd&#x2F;react-dom.production.min.js&quot;&gt;&lt;&#x2F;script&gt;
+
+&lt;script type&#x3D;&quot;text&#x2F;babel&quot; data-plugins&#x3D;&quot;transform-class-properties transform-es2015-modules-umd&quot;&gt;
+import React, { Component } from &#39;react&#39;
+import ReactDOM from &#39;react-dom&#39;
+
+class Editor extends Component {
+&#x2F;&#x2F; ...
+}
+
+class Main extends Component {
+  &#x2F;&#x2F; ...
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;Editor {...this.props} &#x2F;&gt;
+      &lt;&#x2F;div&gt;
+    )
+  }
+}
+&lt;&#x2F;script&gt;</code></pre><p>不出意外，<code>console</code> 会得到一些类似错误提示</p>
+<pre><code>Uncaught TypeError: Cannot read property &#39;Component&#39; of undefined</code></pre><p>通过测试试验，出现这样提示是因为引入的模块 <code>umd</code> 打包出来不符合标准，根据 <code>umd</code> 标准，<code>react</code> 的 libraryName 应该为 <code>react</code>，而不是 <code>React</code>。同样 <code>react-dom</code> 的 libraryName 应该为 <code>reactDom</code> 而不是 <code>ReactDOM</code></p>
+<p>所以解决办法也很简单，加上对应 libraryName 的定义即可</p>
+<pre><code>&lt;script crossorigin src&#x3D;&quot;https:&#x2F;&#x2F;unpkg.com&#x2F;react@16&#x2F;umd&#x2F;react.production.min.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;script crossorigin src&#x3D;&quot;https:&#x2F;&#x2F;unpkg.com&#x2F;react-dom@16&#x2F;umd&#x2F;react-dom.production.min.js&quot;&gt;&lt;&#x2F;script&gt;
+
+&lt;script&gt;
+window[&#39;react&#39;] &#x3D; window.React
+window[&#39;reactDom&#39;] &#x3D; window.ReactDOM
+&lt;&#x2F;script&gt;
+
+&lt;script type&#x3D;&quot;text&#x2F;babel&quot; data-plugins&#x3D;&quot;transform-class-properties transform-es2015-modules-umd&quot;&gt;
+&#x2F;&#x2F; ...
+&lt;&#x2F;script&gt;</code></pre><p>同样，当我们需要引入 <code>react-router</code> 时候，同样也需要做对应处理</p>
+<pre><code>window[&#39;reactRouterDom&#39;] &#x3D; window.ReactRouterDOM
+window[&#39;reactRouter&#39;] &#x3D; window.ReactRouter</code></pre><p>最后，总结一下浏览器写 ES6 + React <code>模板</code></p>
+<pre><code>&lt;script crossorigin src&#x3D;&quot;https:&#x2F;&#x2F;unpkg.com&#x2F;react@16&#x2F;umd&#x2F;react.production.min.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;script crossorigin src&#x3D;&quot;https:&#x2F;&#x2F;unpkg.com&#x2F;react-dom@16&#x2F;umd&#x2F;react-dom.production.min.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;script crossorigin src&#x3D;&quot;https:&#x2F;&#x2F;unpkg.com&#x2F;react-router-dom@4.2.2&#x2F;umd&#x2F;react-router-dom.min.js&quot;&gt;&lt;&#x2F;script&gt;
+
+&lt;script&gt;
+window[&#39;react&#39;] &#x3D; window.React
+window[&#39;reactDom&#39;] &#x3D; window.ReactDOM
+window[&#39;reactRouterDom&#39;] &#x3D; window.ReactRouterDOM
+&lt;&#x2F;script&gt;
+
+&lt;script type&#x3D;&quot;text&#x2F;babel&quot; data-plugins&#x3D;&quot;transform-class-properties transform-es2015-modules-umd&quot;&gt;
+&#x2F;&#x2F; ...
+&lt;&#x2F;script&gt;</code></pre><p>可能会有疑问：为什么要在浏览器做这样事情，为什么不直接用 <code>webpack</code> 之类的。这里说明一下，正常情况下我们的 webapp 是不应该这样子做，应该预先打包后发布。所以这种浏览器处理方式的使用场景是在展示，测试一些小 demo 时候使用的</p>
+]]></description><link>https:/acyort.am0200.com/posts/322485220.html</link><guid isPermaLink="true">https:/acyort.am0200.com/posts/322485220.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Sat, 12 May 2018 05:47:03 GMT</pubDate></item><item><title><![CDATA[使用 setTimeout 排序]]></title><description><![CDATA[<p>原理就是将要排序的数组的每一个项作为 <code>setTimeout</code> 时间参数，然后就可以排序了</p>
 <p>排序时间跟数组最大值绝对值有关 :)</p>
 <p>需要对数组的负数项做一下处理，因为 <code>setTimeout</code> 参数负数的话跟参数 0 是一样的</p>
 <p>例子 <a href="https://jsfiddle.net/am0200/o0sz55pq/">JSFiddle</a></p>
@@ -36,8 +132,7 @@ function sort(arr) {
   document.body.innerHTML &#x3D; &#39;Before: &#39; + numbers.join(&#39;, &#39;) + &#39;&lt;br&gt;After: &#39; + (await sortArr(numbers)).join(&#39;, &#39;)
 })()
 
-&#x2F;&#x2F; 排序结果: [-767, -3, -1, 0, 3, 4, 8, 9, 89, 111, 999]</code></pre><p>最后说明一下，关于这种特别的排序方式，不应该去纠结效率时间问题</p>
-]]></description><link>https:/acyort.am0200.com/posts/244718742.html</link><guid isPermaLink="true">https:/acyort.am0200.com/posts/244718742.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Sun, 22 Apr 2018 09:21:33 GMT</pubDate></item><item><title><![CDATA[AcyOrt - 基于 Node.js 的静态网站生成框架]]></title><description><![CDATA[<p>AcyOrt 是一个简单的静态页面生成框架，由 GitHub 支持，基于 NodeJS 构建。通过这个框架你可以在 GitHub issues 上写作，并且你的网站可以自动构建。</p>
+&#x2F;&#x2F; 排序结果: [-767, -3, -1, 0, 3, 4, 8, 9, 89, 111, 999]</code></pre>]]></description><link>https:/acyort.am0200.com/posts/244718742.html</link><guid isPermaLink="true">https:/acyort.am0200.com/posts/244718742.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Sat, 12 May 2018 04:13:25 GMT</pubDate></item><item><title><![CDATA[AcyOrt - 基于 Node.js 的静态网站生成框架]]></title><description><![CDATA[<p>AcyOrt 是一个简单的静态页面生成框架，由 GitHub 支持，基于 NodeJS 构建。通过这个框架你可以在 GitHub issues 上写作，并且你的网站可以自动构建。</p>
 <!-- more -->
 <p>项目地址：<a href="https://github.com/acyortjs/acyort">https://github.com/acyortjs/acyort</a></p>
 <h2>主要特色</h2><h3>简单写作</h3><p>可以在任意时间位置把网站内容写在 issues 上，也不用担心图片文章存储问题</p>
