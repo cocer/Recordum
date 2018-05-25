@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Recordum]]></title><description><![CDATA[All about Recordum]]></description><link>https://acyort.am0200.com</link><generator>RSS for Node</generator><lastBuildDate>Sat, 12 May 2018 05:47:20 GMT</lastBuildDate><atom:link href="https:/acyort.am0200.com/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 12 May 2018 05:47:20 GMT</pubDate><item><title><![CDATA[关于浏览器直接使用 ES6 的一些简单介绍]]></title><description><![CDATA[<p>在浏览器端直接运行 ES6 代码通常可以这样做</p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Recordum]]></title><description><![CDATA[All about Recordum]]></description><link>https://acyort.am0200.com</link><generator>RSS for Node</generator><lastBuildDate>Fri, 25 May 2018 12:30:47 GMT</lastBuildDate><atom:link href="https:/acyort.am0200.com/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 25 May 2018 12:30:47 GMT</pubDate><item><title><![CDATA[yukar - Chrome Extension JavaScript Code Editor]]></title><description><![CDATA[<p>yukar 是一个前端代码编辑预览工具，是一个 chrome 插件。你可以从 chrome web store 上安装 <a href="https://chrome.google.com/webstore/detail/yukar/ilbmpnheigbnilnbknenakbkkdmaemlp">yukar</a></p>
+<!-- more -->
+<h3>为什么要造这个轮子</h3><ol>
+<li><p>有很多在线代码编辑预览工具，类似 jsfiddle，codepen，但都不能离线使用，还经常一些资源被墙</p>
+</li><li><p>js 新特性支持度不完整，很多都不支持 vue 的 JSX</p>
+</li><li><p>一些类似插件不能跳过 CSP（Content Security Policy）资源加载</p>
+</li><li><p>在线编辑器在复制黏贴测试代码需要来回切换 tab，很不方便</p>
+</li><li><p>umd 模块资源可能不可用</p>
+</li></ol>
+<h3>功能介绍</h3><ol>
+<li><p>ES6／7 的新特性支持</p>
+</li><li><p>Async／Await</p>
+</li><li>Class Properties</li><li>Object Rest Spread</li><li><p>Decorators</p>
+</li><li><p>React JSX ／Vue JSX 支持</p>
+</li><li><p>保存代码记录</p>
+</li><li><p>Console 记录支持</p>
+</li></ol>
+<h3>相关图片</h3><p><img width="822" alt="screen shot 2018-05-23 at 10 39 15 am" src="https://user-images.githubusercontent.com/2193211/40400634-a50bf078-5e75-11e8-9ff8-63efacfee8c1.png"></p>
+<p><img width="814" alt="screen shot 2018-05-23 at 10 38 30 am" src="https://user-images.githubusercontent.com/2193211/40400636-a5edb44a-5e75-11e8-82ad-b9fdf446a358.png"></p>
+<p><img width="817" alt="screen shot 2018-05-23 at 10 38 10 am" src="https://user-images.githubusercontent.com/2193211/40400638-a690f786-5e75-11e8-90f9-59da5c395d75.png"></p>
+<p><img width="817" alt="screen shot 2018-05-23 at 10 38 01 am" src="https://user-images.githubusercontent.com/2193211/40400639-a72db6c0-5e75-11e8-89c0-629ff6c2c8f4.png"></p>
+<p><img width="819" alt="screen shot 2018-05-23 at 10 37 50 am" src="https://user-images.githubusercontent.com/2193211/40400640-a78aa088-5e75-11e8-812c-9be47b3792a1.png"></p>
+]]></description><link>https:/acyort.am0200.com/posts/326504914.html</link><guid isPermaLink="true">https:/acyort.am0200.com/posts/326504914.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Fri, 25 May 2018 12:30:30 GMT</pubDate></item><item><title><![CDATA[关于浏览器直接使用 ES6 的一些简单介绍]]></title><description><![CDATA[<p>在浏览器端直接运行 ES6 代码通常可以这样做</p>
 <p>首先引入 <code>babel-standalone</code></p>
 <pre><code>&lt;script src&#x3D;&quot;https:&#x2F;&#x2F;unpkg.com&#x2F;babel-standalone@6.26.0&#x2F;babel.min.js&quot;&gt;&lt;&#x2F;script&gt;</code></pre><p>然后就可以直接写 ES6 代码了</p>
 <pre><code>&lt;script type&#x3D;&quot;text&#x2F;babel&quot;&gt;
@@ -94,7 +116,7 @@ window[&#39;reactRouterDom&#39;] &#x3D; window.ReactRouterDOM
 &lt;script type&#x3D;&quot;text&#x2F;babel&quot; data-plugins&#x3D;&quot;transform-class-properties transform-es2015-modules-umd&quot;&gt;
 &#x2F;&#x2F; ...
 &lt;&#x2F;script&gt;</code></pre><p>可能会有疑问：为什么要在浏览器做这样事情，为什么不直接用 <code>webpack</code> 之类的。这里说明一下，正常情况下我们的 webapp 是不应该这样子做，应该预先打包后发布。所以这种浏览器处理方式的使用场景是在展示，测试一些小 demo 时候使用的</p>
-]]></description><link>https:/acyort.am0200.com/posts/322485220.html</link><guid isPermaLink="true">https:/acyort.am0200.com/posts/322485220.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Sat, 12 May 2018 05:47:03 GMT</pubDate></item><item><title><![CDATA[使用 setTimeout 排序]]></title><description><![CDATA[<p>原理就是将要排序的数组的每一个项作为 <code>setTimeout</code> 时间参数，然后就可以排序了</p>
+]]></description><link>https:/acyort.am0200.com/posts/322485220.html</link><guid isPermaLink="true">https:/acyort.am0200.com/posts/322485220.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Fri, 18 May 2018 12:18:31 GMT</pubDate></item><item><title><![CDATA[使用 setTimeout 排序]]></title><description><![CDATA[<p>原理就是将要排序的数组的每一个项作为 <code>setTimeout</code> 时间参数，然后就可以排序了</p>
 <p>排序时间跟数组最大值绝对值有关 :)</p>
 <p>需要对数组的负数项做一下处理，因为 <code>setTimeout</code> 参数负数的话跟参数 0 是一样的</p>
 <p>例子 <a href="https://jsfiddle.net/am0200/o0sz55pq/">JSFiddle</a></p>
@@ -132,7 +154,7 @@ function sort(arr) {
   document.body.innerHTML &#x3D; &#39;Before: &#39; + numbers.join(&#39;, &#39;) + &#39;&lt;br&gt;After: &#39; + (await sortArr(numbers)).join(&#39;, &#39;)
 })()
 
-&#x2F;&#x2F; 排序结果: [-767, -3, -1, 0, 3, 4, 8, 9, 89, 111, 999]</code></pre>]]></description><link>https:/acyort.am0200.com/posts/244718742.html</link><guid isPermaLink="true">https:/acyort.am0200.com/posts/244718742.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Sat, 12 May 2018 04:13:25 GMT</pubDate></item><item><title><![CDATA[AcyOrt - 基于 Node.js 的静态网站生成框架]]></title><description><![CDATA[<p>AcyOrt 是一个简单的静态页面生成框架，由 GitHub 支持，基于 NodeJS 构建。通过这个框架你可以在 GitHub issues 上写作，并且你的网站可以自动构建。</p>
+&#x2F;&#x2F; 排序结果: [-767, -3, -1, 0, 3, 4, 8, 9, 89, 111, 999]</code></pre>]]></description><link>https:/acyort.am0200.com/posts/244718742.html</link><guid isPermaLink="true">https:/acyort.am0200.com/posts/244718742.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Sat, 12 May 2018 06:51:29 GMT</pubDate></item><item><title><![CDATA[AcyOrt - 基于 Node.js 的静态网站生成框架]]></title><description><![CDATA[<p>AcyOrt 是一个简单的静态页面生成框架，由 GitHub 支持，基于 NodeJS 构建。通过这个框架你可以在 GitHub issues 上写作，并且你的网站可以自动构建。</p>
 <!-- more -->
 <p>项目地址：<a href="https://github.com/acyortjs/acyort">https://github.com/acyortjs/acyort</a></p>
 <h2>主要特色</h2><h3>简单写作</h3><p>可以在任意时间位置把网站内容写在 issues 上，也不用担心图片文章存储问题</p>
