@@ -1,28 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Recordum]]></title><description><![CDATA[All about Recordum]]></description><link>https://acyort.am0200.com</link><generator>RSS for Node</generator><lastBuildDate>Fri, 25 May 2018 12:56:31 GMT</lastBuildDate><atom:link href="https:/acyort.am0200.com/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 25 May 2018 12:56:31 GMT</pubDate><item><title><![CDATA[yukar - Chrome Extension JavaScript Code Editor]]></title><description><![CDATA[<p>yukar 是一个前端代码编辑预览工具，是一个 chrome 插件。你可以从 chrome web store 上安装 </p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Recordum]]></title><description><![CDATA[All about Recordum]]></description><link>https://acyort.am0200.com</link><generator>RSS for Node</generator><lastBuildDate>Sat, 26 May 2018 07:58:18 GMT</lastBuildDate><atom:link href="https:/acyort.am0200.com/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 26 May 2018 07:58:18 GMT</pubDate><item><title><![CDATA[yukar - Chrome Extension JavaScript Code Editor]]></title><description><![CDATA[<p>yukar 是一个前端代码编辑预览工具，是一个 chrome 插件。你可以从 chrome web store 上安装 </p>
 <p><a href="https://chrome.google.com/webstore/detail/yukar/ilbmpnheigbnilnbknenakbkkdmaemlp">https://chrome.google.com/webstore/detail/yukar/ilbmpnheigbnilnbknenakbkkdmaemlp</a></p>
 <!-- more -->
+
 <h3>为什么要造这个轮子</h3><ol>
 <li><p>有很多在线代码编辑预览工具，类似 jsfiddle，codepen，但都不能离线使用，还经常一些资源被墙</p>
-</li><li><p>js 新特性支持度不完整，很多都不支持 vue 的 JSX</p>
-</li><li><p>一些类似插件不能跳过 CSP（Content Security Policy）资源加载</p>
-</li><li><p>在线编辑器在复制黏贴测试代码需要来回切换 tab，很不方便</p>
-</li><li><p>umd 模块资源可能不可用</p>
-</li></ol>
+</li>
+<li><p>js 新特性支持度不完整，很多都不支持 vue 的 JSX</p>
+</li>
+<li><p>一些类似插件不能跳过 CSP（Content Security Policy）资源加载</p>
+</li>
+<li><p>在线编辑器在复制黏贴测试代码需要来回切换 tab，很不方便</p>
+</li>
+<li><p>umd 模块资源可能不可用</p>
+</li>
+</ol>
 <h3>功能介绍</h3><ol>
-<li>ES6／7 的新特性支持</li></ol>
+<li><p>ES6／7 的新特性支持</p>
 <ul>
-<li>Async／Await</li><li>Class Properties</li><li>Object Rest Spread</li><li>Decorators</li></ul>
-<ol start="2">
+<li>Async／Await</li>
+<li>Class Properties</li>
+<li>Object Rest Spread</li>
+<li>Decorators</li>
+</ul>
+</li>
 <li><p>React JSX ／Vue JSX 支持</p>
-</li><li><p>保存代码记录</p>
-</li><li><p>Console 记录支持</p>
-</li></ol>
-<h3>相关图片</h3><p><img width="822" alt="screen shot 2018-05-23 at 10 39 15 am" src="https://user-images.githubusercontent.com/2193211/40400634-a50bf078-5e75-11e8-9ff8-63efacfee8c1.png"></p>
-<p><img width="814" alt="screen shot 2018-05-23 at 10 38 30 am" src="https://user-images.githubusercontent.com/2193211/40400636-a5edb44a-5e75-11e8-82ad-b9fdf446a358.png"></p>
-<p><img width="817" alt="screen shot 2018-05-23 at 10 38 10 am" src="https://user-images.githubusercontent.com/2193211/40400638-a690f786-5e75-11e8-90f9-59da5c395d75.png"></p>
-<p><img width="817" alt="screen shot 2018-05-23 at 10 38 01 am" src="https://user-images.githubusercontent.com/2193211/40400639-a72db6c0-5e75-11e8-89c0-629ff6c2c8f4.png"></p>
-<p><img width="819" alt="screen shot 2018-05-23 at 10 37 50 am" src="https://user-images.githubusercontent.com/2193211/40400640-a78aa088-5e75-11e8-812c-9be47b3792a1.png"></p>
-]]></description><link>https:/acyort.am0200.com/posts/326504914.html</link><guid isPermaLink="true">https:/acyort.am0200.com/posts/326504914.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Fri, 25 May 2018 12:56:16 GMT</pubDate></item><item><title><![CDATA[关于浏览器直接使用 ES6 的一些简单介绍]]></title><description><![CDATA[<p>在浏览器端直接运行 ES6 代码通常可以这样做</p>
+</li>
+<li><p>保存代码记录</p>
+</li>
+<li><p>Console 记录支持</p>
+</li>
+</ol>
+<h3>相关图片</h3><img width="822" alt="screen shot 2018-05-23 at 10 39 15 am" src="https://user-images.githubusercontent.com/2193211/40400634-a50bf078-5e75-11e8-9ff8-63efacfee8c1.png">
+
+
+<img width="814" alt="screen shot 2018-05-23 at 10 38 30 am" src="https://user-images.githubusercontent.com/2193211/40400636-a5edb44a-5e75-11e8-82ad-b9fdf446a358.png">
+
+
+<img width="817" alt="screen shot 2018-05-23 at 10 38 10 am" src="https://user-images.githubusercontent.com/2193211/40400638-a690f786-5e75-11e8-90f9-59da5c395d75.png">
+
+
+<img width="817" alt="screen shot 2018-05-23 at 10 38 01 am" src="https://user-images.githubusercontent.com/2193211/40400639-a72db6c0-5e75-11e8-89c0-629ff6c2c8f4.png">
+
+
+<img width="819" alt="screen shot 2018-05-23 at 10 37 50 am" src="https://user-images.githubusercontent.com/2193211/40400640-a78aa088-5e75-11e8-812c-9be47b3792a1.png">
+]]></description><link>https:/acyort.am0200.com/posts/326504914.html</link><guid isPermaLink="true">https:/acyort.am0200.com/posts/326504914.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Sat, 26 May 2018 07:57:58 GMT</pubDate></item><item><title><![CDATA[关于浏览器直接使用 ES6 的一些简单介绍]]></title><description><![CDATA[<p>在浏览器端直接运行 ES6 代码通常可以这样做</p>
 <p>首先引入 <code>babel-standalone</code></p>
 <pre><code>&lt;script src&#x3D;&quot;https:&#x2F;&#x2F;unpkg.com&#x2F;babel-standalone@6.26.0&#x2F;babel.min.js&quot;&gt;&lt;&#x2F;script&gt;</code></pre><p>然后就可以直接写 ES6 代码了</p>
 <pre><code>&lt;script type&#x3D;&quot;text&#x2F;babel&quot;&gt;
@@ -158,6 +179,7 @@ function sort(arr) {
 
 &#x2F;&#x2F; 排序结果: [-767, -3, -1, 0, 3, 4, 8, 9, 89, 111, 999]</code></pre>]]></description><link>https:/acyort.am0200.com/posts/244718742.html</link><guid isPermaLink="true">https:/acyort.am0200.com/posts/244718742.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Sat, 12 May 2018 06:51:29 GMT</pubDate></item><item><title><![CDATA[AcyOrt - 基于 Node.js 的静态网站生成框架]]></title><description><![CDATA[<p>AcyOrt 是一个简单的静态页面生成框架，由 GitHub 支持，基于 NodeJS 构建。通过这个框架你可以在 GitHub issues 上写作，并且你的网站可以自动构建。</p>
 <!-- more -->
+
 <p>项目地址：<a href="https://github.com/acyortjs/acyort">https://github.com/acyortjs/acyort</a></p>
 <h2>主要特色</h2><h3>简单写作</h3><p>可以在任意时间位置把网站内容写在 issues 上，也不用担心图片文章存储问题</p>
 <h3>多用户支持</h3><p>支持多用户写作，可以多个用户共同维护网站</p>
@@ -217,8 +239,11 @@ new webpack.optimize.CommonsChunkPlugin({
 <p>因为 GitHub pages 支持 404.html，所以直接将生成的 index.html 复制生成一份 404.html，那么访问不存在路径就直接访问 404.html，就相当于访问 index.html，虽然这时候的 http code 是 404，但整个项目功能并没有受到影响</p>
 ]]></description><link>https:/acyort.am0200.com/posts/223304114.html</link><guid isPermaLink="true">https:/acyort.am0200.com/posts/223304114.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Sun, 22 Apr 2018 09:41:27 GMT</pubDate></item><item><title><![CDATA[关于 react-router 的 browserHistory 模式]]></title><description><![CDATA[<p>SPA 项目基本上都会用到路由 <code>router</code>。react 还有 vue 对应有其路由插件。 react-router 还有 vue-router 都有 hashHistory 和 browserHistory 模式。这里大概说一下两者区别</p>
 <!-- more -->
+
 <ul>
-<li>hashHistory: 不需要服务器配置，在 URL 生成一个 hash 来跟踪状态，通常在测试环境使用，也可以作为发布环境使用</li><li>browserHistory: 需要服务器端做配置，路径是真实的URL，是 react-router 官方推荐首选</li></ul>
+<li>hashHistory: 不需要服务器配置，在 URL 生成一个 hash 来跟踪状态，通常在测试环境使用，也可以作为发布环境使用</li>
+<li>browserHistory: 需要服务器端做配置，路径是真实的URL，是 react-router 官方推荐首选</li>
+</ul>
 <p>大多数情况下，browserHistory 模式明显是优于 hashHistory 模式的，但 browserHistory 需要一定的配置</p>
 <h2>配置 browserHistory</h2><p>可以看出，hashHistory 不需要什么配置，但 browserHistory 需要服务端支持，这里简单说一下两种方式做支持，其它方式基本上都是类似</p>
 <h3>使用 express</h3><pre><code>const app &#x3D; express()
@@ -275,35 +300,67 @@ routes.forEach((route) &#x3D;&gt; {
 <p>直接使用服务端 404 页面了，如果是用 <code>GitHub pages</code> 的话，我们可以直接生成一个 <code>404.html</code> 即可，直接把 404 页面弄成跟 index 内容一样，404 时候就是正常的内容页面，这时候页面功能是正常的，并且不需要前面的一对做法了。</p>
 ]]></description><link>https:/acyort.am0200.com/posts/210285498.html</link><guid isPermaLink="true">https:/acyort.am0200.com/posts/210285498.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Sun, 22 Apr 2018 10:13:13 GMT</pubDate></item><item><title><![CDATA[黑苹果]]></title><description><![CDATA[<p>也算是完成了读书时候的心愿，以前读书时候老想着弄个黑苹果，但是一直没有成功。最近折腾安装前后花的时间就两三天那样，参考了一堆前人经验，所以不会很折腾，总体上算是完美的</p>
 <!-- more -->
+
 <h2>黑苹果情况</h2><p><img src="https://cloud.githubusercontent.com/assets/2193211/22615077/d8cde9de-eac7-11e6-98be-6531cc36bc61.png" alt="screen shot 2017-02-04 at 10 30 35 am"></p>
 <h3>正常部分</h3><ul>
-<li>显卡(HD530)，声卡，网卡驱动正常</li><li>USB 3 识别正常</li><li>CPU 可以变频</li><li>SSD TRIM 正常</li></ul>
+<li>显卡(HD530)，声卡，网卡驱动正常</li>
+<li>USB 3 识别正常</li>
+<li>CPU 可以变频</li>
+<li>SSD TRIM 正常</li>
+</ul>
 <h3>问题</h3><ul>
-<li>不能休眠/睡眠，因为是台式机，不理会</li><li>开机偶尔会出现禁止符号，拔掉/换接口 usb 就可以，应该是 usb 驱动问题吧，经常不关机不理会</li><li>开机过程会有一瞬间花屏现象，不影响使用，不理会</li></ul>
+<li>不能休眠/睡眠，因为是台式机，不理会</li>
+<li>开机偶尔会出现禁止符号，拔掉/换接口 usb 就可以，应该是 usb 驱动问题吧，经常不关机不理会</li>
+<li>开机过程会有一瞬间花屏现象，不影响使用，不理会</li>
+</ul>
 <h2>机器配置</h2><ul>
-<li>CPU: i5-6500 散 </li><li>主板: 微星 B150i GAMING PRO </li><li>内存: 金士顿 8G*2 </li><li>显卡: 内置集显</li><li>机箱: 迎广肖邦</li><li>电源: 机箱内置 </li><li>SSD: Crucial_CT960M500 (之前没有用到的) </li></ul>
+<li>CPU: i5-6500 散 </li>
+<li>主板: 微星 B150i GAMING PRO </li>
+<li>内存: 金士顿 8G*2 </li>
+<li>显卡: 内置集显</li>
+<li>机箱: 迎广肖邦</li>
+<li>电源: 机箱内置 </li>
+<li>SSD: Crucial_CT960M500 (之前没有用到的) </li>
+</ul>
 <h2>安装过程</h2><p>主要参考：<a href="https://www.tonymacx86.com/threads/unibeast-install-macos-sierra-on-any-supported-intel-based-pc.200564/">https://www.tonymacx86.com/threads/unibeast-install-macos-sierra-on-any-supported-intel-based-pc.200564/</a></p>
 <p>需要 3 个软件 <code>UniBeast</code>, <code>MultiBeast</code>, <code>Clover Configurator</code></p>
 <p>usb 启动盘相关都是在 MacBook air 上操作的，教程上制作软件需要在英文系统下操作</p>
 <h3>BIOS 设置</h3><ul>
 <li><p>settings\高级\整合周边设备： SATA模式 - AHCI模式</p>
-</li><li><p>settings\高级\USB设置： XHCI Hand-off - 允许</p>
-</li><li><p>settings\高级\超级IO配置\串口0配置： 串口0 - 禁止</p>
-</li><li><p>settings\启动： 启动模式选择 - UEFI</p>
-</li><li><p>Overclocking\CPU 特征： CFG 锁定 - 禁止</p>
-</li><li><p><del>Overclocking\CPU 特征： Intel 虚拟化技术 - 禁止 ／ Intel VT-D 技术 - 禁止</del></p>
-</li></ul>
+</li>
+<li><p>settings\高级\USB设置： XHCI Hand-off - 允许</p>
+</li>
+<li><p>settings\高级\超级IO配置\串口0配置： 串口0 - 禁止</p>
+</li>
+<li><p>settings\启动： 启动模式选择 - UEFI</p>
+</li>
+<li><p>Overclocking\CPU 特征： CFG 锁定 - 禁止</p>
+</li>
+<li><p><del>Overclocking\CPU 特征： Intel 虚拟化技术 - 禁止 ／ Intel VT-D 技术 - 禁止</del></p>
+</li>
+</ul>
 <h3>UniBeast 制作安装启动盘</h3><ul>
-<li>格式化 U 盘：USB/OS X Extended (Journaled)/GUID Partition Map</li><li>写入 macOS Sierra 镜像，过程有点长，慢慢等</li></ul>
+<li>格式化 U 盘：USB/OS X Extended (Journaled)/GUID Partition Map</li>
+<li>写入 macOS Sierra 镜像，过程有点长，慢慢等</li>
+</ul>
 <p>安装完成将需要的设置软件 <code>MultiBeast</code>, <code>Clover Configurator</code> 拖入 U 盘保存，后续需要</p>
 <h3>安装系统</h3><ul>
-<li>开机 F11 选择 U 盘启动</li><li>磁盘工具格式化硬盘：Sierra/OS X Extended (Journaled)/GUID Partition Map</li><li>安装，然后提示重启</li><li>重启后选择 U 盘启动，启动刚刚安装的 Sierra，继续完成安装</li></ul>
+<li>开机 F11 选择 U 盘启动</li>
+<li>磁盘工具格式化硬盘：Sierra/OS X Extended (Journaled)/GUID Partition Map</li>
+<li>安装，然后提示重启</li>
+<li>重启后选择 U 盘启动，启动刚刚安装的 Sierra，继续完成安装</li>
+</ul>
 <h3>系统设置</h3><p>完成安装后，这时候系统还没有相关驱动，打开相应软件进行设置</p>
 <p><strong>使用 <code>MutiBeast</code> 进行驱动相关设置</strong></p>
 <ul>
-<li>Quick Start: UEFI Boot Mode</li><li>Audio: Realtek ALCxxx - ALC887/888b, Optional HD 3000/HD 4000/HD 530 HDMI Audio</li><li>Network: Realtek - RealtekRTL8111 v2.2.1</li><li>Graphics Configuration: Intel HD 530</li><li><p>SSDT Options: Sandy Bridge Core i5</p>
+<li>Quick Start: UEFI Boot Mode</li>
+<li>Audio: Realtek ALCxxx - ALC887/888b, Optional HD 3000/HD 4000/HD 530 HDMI Audio</li>
+<li>Network: Realtek - RealtekRTL8111 v2.2.1</li>
+<li>Graphics Configuration: Intel HD 530</li>
+<li><p>SSDT Options: Sandy Bridge Core i5</p>
 <p><strong>plist 设置</strong></p>
-</li></ul>
+</li>
+</ul>
 <p>使用 <code>Clover Configurator</code> mount EFI 分区，用 sublime 打开 EFI/CLOVER/config.plist，添加对应字段</p>
 <pre><code>&lt;?xml version&#x3D;&quot;1.0&quot; encoding&#x3D;&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE plist PUBLIC &quot;-&#x2F;&#x2F;Apple&#x2F;&#x2F;DTD PLIST 1.0&#x2F;&#x2F;EN&quot; &quot;http:&#x2F;&#x2F;www.apple.com&#x2F;DTDs&#x2F;PropertyList-1.0.dtd&quot;&gt;
@@ -412,9 +469,12 @@ routes.forEach((route) &#x3D;&gt; {
 <p>config.plist／Boot/DefaultVolume 的 ‘值’ 改成你的启动盘(Sierra)，默认为 macHDD</p>
 ]]></description><link>https:/acyort.am0200.com/posts/205319771.html</link><guid isPermaLink="true">https:/acyort.am0200.com/posts/205319771.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Sun, 22 Apr 2018 10:47:54 GMT</pubDate></item><item><title><![CDATA[Adobe CEP 扩展]]></title><description><![CDATA[<p>Adobe 系列通常情况下宿主应用是不会运行未经签名扩展的，只有打包并签名才可以运行。但是可以打开开发者模式</p>
 <!-- more -->
+
 <h2>启用开发者模式</h2><h3>Windows</h3><p>打开到注册表定位到: ( 高版本类推 )</p>
 <ul>
-<li>CC 2014: <code>HKEY_CURRENT_USER\Software\Adobe\CSXS.5</code></li><li>CC 2015: <code>HKEY_CURRENT_USER\Software\Adobe\CSXS.6</code></li></ul>
+<li>CC 2014: <code>HKEY_CURRENT_USER\Software\Adobe\CSXS.5</code></li>
+<li>CC 2015: <code>HKEY_CURRENT_USER\Software\Adobe\CSXS.6</code></li>
+</ul>
 <p>将 <code>PlayerDebugMode</code> 设置为 <code>1</code></p>
 <h3>macOS</h3><p>终端输入: ( 同样高版本类推 )</p>
 <p><code>defaults write com.adobe.CSXS.6 PlayerDebugMode 1</code></p>
@@ -439,7 +499,9 @@ routes.forEach((route) &#x3D;&gt; {
 <p>注意最终插件 xxx 放入目录最终应该存在 <code>/extensions/xxx/index.html</code></p>
 <h3>启用</h3><p>重启 photoshop，选择 &quot;Window&quot; → &quot;Extensions&quot; → &quot;xxx&quot; 启用 </p>
 <h2>参考文章</h2><ul>
-<li><a href="http://nullice.com/archives/1741">Adobe CEP 扩展开发教程 「 4 」签名与打包</a></li><li><a href="http://nullice.com/archives/1665">Adobe CEP 扩展开发教程 「 1 」Hello World!</a></li></ul>
+<li><a href="http://nullice.com/archives/1741">Adobe CEP 扩展开发教程 「 4 」签名与打包</a></li>
+<li><a href="http://nullice.com/archives/1665">Adobe CEP 扩展开发教程 「 1 」Hello World!</a></li>
+</ul>
 ]]></description><link>https:/acyort.am0200.com/posts/196350551.html</link><guid isPermaLink="true">https:/acyort.am0200.com/posts/196350551.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Sun, 22 Apr 2018 11:14:28 GMT</pubDate></item><item><title><![CDATA[Mirror - 基于 issues 的博客工具]]></title><description><![CDATA[<p>Mirror 是一个简单的博客工具，基于 GitHub API 获取 issues 数据，然后展示在页面上。</p>
 <p>该工具的方便之处在于只需要在 issue 上写你的博客文章，你的网站会自动更新博客内容。</p>
 <p>借助 GitHub，你可以轻松的用 markdown 书写你的博客内容，永久保存，不用担心数据丢失问题。还可以非常方便上传博客图片，拖入编辑器即可。</p>
@@ -460,7 +522,9 @@ $ mirror init </code></pre><p>或者</p>
 <p><a href="https://github.com/settings/tokens">https://github.com/settings/tokens</a></p>
 <p>只需要勾选两个选择，其他不要勾选</p>
 <ul>
-<li>read:user Read all user profile data</li><li>user:email Access user email addresses (read-only)</li></ul>
+<li>read:user Read all user profile data</li>
+<li>user:email Access user email addresses (read-only)</li>
+</ul>
 <p>修改 <code>config.yml</code></p>
 <pre><code># 标题
 title: Mirror
@@ -510,10 +574,13 @@ window.config &#x3D; {&quot;title&quot;:&quot;&quot;,&quot;user&quot;:&quot;&quo
 <p><img src="https://cloud.githubusercontent.com/assets/2193211/12321915/c66d8b12-baeb-11e5-9612-b188f5272e3b.jpg" alt="mirror"></p>
 ]]></description><link>https:/acyort.am0200.com/posts/126817142.html</link><guid isPermaLink="true">https:/acyort.am0200.com/posts/126817142.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Mon, 23 Apr 2018 12:38:53 GMT</pubDate></item><item><title><![CDATA[输入框输入值自动格式化]]></title><description><![CDATA[<p>这里说的自动格式化是指当用户在输入框里面输入数字，例如银行卡号，为了方便用户输入，希望在输入过程中对输入数字进行加空格处理，优化用户体验</p>
 <!-- more -->
+
 <p>先看一下例子: <a href="http://jsfiddle.net/am0200/qugp8tvL/">http://jsfiddle.net/am0200/qugp8tvL/</a></p>
 <p>注意例子里面的输入框的类型是 <code>tel</code>，而不是 <code>number</code>，主要原因是 <code>number</code> 类型</p>
 <ul>
-<li>会导致 Android 上某些系统不显示 <code>placeholder</code></li><li>无法插入非数字内容，例如空格</li></ul>
+<li>会导致 Android 上某些系统不显示 <code>placeholder</code></li>
+<li>无法插入非数字内容，例如空格</li>
+</ul>
 <h3>代码实现</h3><p><code>data-gap</code> 代表第几位开始加空格，不为 0</p>
 <pre><code>&lt;input data-gap&#x3D;4 maxlength&#x3D;&quot;24&quot; size&#x3D;&quot;30&quot; autocomplete&#x3D;&quot;off&quot; type&#x3D;&quot;tel&quot; placeholder&#x3D;&quot;请输入卡号&quot;&#x2F;&gt;</code></pre><p>原理就是获取用户输入内容，格式化处理完成后再填入输入框</p>
 <pre><code>var input &#x3D; document.querySelectorAll(&#39;input&#39;)[0]
@@ -545,6 +612,7 @@ input.oninput &#x3D; function() {
 <pre><code>input.value.replace(&#x2F;\s+&#x2F;g, &#39;&#39;)</code></pre><h3>扩展</h3><p>可以设置格式化分割字符，例如用 <code>-</code> 代替空格，还可以设定不规则位数空格，具体可以修改处理条件即可</p>
 ]]></description><link>https:/acyort.am0200.com/posts/71470122.html</link><guid isPermaLink="true">https:/acyort.am0200.com/posts/71470122.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Mon, 18 Dec 2017 08:49:25 GMT</pubDate></item><item><title><![CDATA[创建类似 http://ithinkimight.com/ 随机大小排布界面]]></title><description><![CDATA[<p><code>ithinkimight.com</code> 这个网站图片来自 Instagram，图片随机大小，位置也是随机，图片可以重叠，但是并没有 <strong>过分</strong> 重叠。这种随机大小，位置排版页面元素跟平常的整齐 <code>grid</code> 或者 <code>瀑布流</code> 风格很不一样，下面我们尝试一下实现类似效果</p>
 <!-- more -->
+
 <p>从网站源文件上看并不能看出网站是如何随机排布这些图片，因为是后端直接输出图片的位置参数，并不是前端实现的位置计算。不过这里有一种简单方法，可以实现类似效果。先看一下具体效果</p>
 <h3>例子以及实际运用效果</h3><p><a href="http://jsfiddle.net/am0200/1mn5xbf8/">http://jsfiddle.net/am0200/1mn5xbf8/</a></p>
 <p><a href="http://stone.am0200.com/">http://stone.am0200.com/</a></p>

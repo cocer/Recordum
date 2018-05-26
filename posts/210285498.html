@@ -40,7 +40,9 @@
   <h1 class="title">关于 react-router 的 browserHistory 模式</h1>
   <div class="content"><p>SPA 项目基本上都会用到路由 <code>router</code>。react 还有 vue 对应有其路由插件。 react-router 还有 vue-router 都有 hashHistory 和 browserHistory 模式。这里大概说一下两者区别</p>
 <ul>
-<li>hashHistory: 不需要服务器配置，在 URL 生成一个 hash 来跟踪状态，通常在测试环境使用，也可以作为发布环境使用</li><li>browserHistory: 需要服务器端做配置，路径是真实的URL，是 react-router 官方推荐首选</li></ul>
+<li>hashHistory: 不需要服务器配置，在 URL 生成一个 hash 来跟踪状态，通常在测试环境使用，也可以作为发布环境使用</li>
+<li>browserHistory: 需要服务器端做配置，路径是真实的URL，是 react-router 官方推荐首选</li>
+</ul>
 <p>大多数情况下，browserHistory 模式明显是优于 hashHistory 模式的，但 browserHistory 需要一定的配置</p>
 <h2 id="配置browserhistory">配置 browserHistory</h2><p>可以看出，hashHistory 不需要什么配置，但 browserHistory 需要服务端支持，这里简单说一下两种方式做支持，其它方式基本上都是类似</p>
 <h3 id="使用express">使用 express</h3>

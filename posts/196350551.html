@@ -41,7 +41,9 @@ Adobe CEP 扩展 - Recordum
   <div class="content"><p>Adobe 系列通常情况下宿主应用是不会运行未经签名扩展的，只有打包并签名才可以运行。但是可以打开开发者模式</p>
 <h2 id="启用开发者模式">启用开发者模式</h2><h3 id="windows">Windows</h3><p>打开到注册表定位到: ( 高版本类推 )</p>
 <ul>
-<li>CC 2014: <code>HKEY_CURRENT_USER\Software\Adobe\CSXS.5</code></li><li>CC 2015: <code>HKEY_CURRENT_USER\Software\Adobe\CSXS.6</code></li></ul>
+<li>CC 2014: <code>HKEY_CURRENT_USER\Software\Adobe\CSXS.5</code></li>
+<li>CC 2015: <code>HKEY_CURRENT_USER\Software\Adobe\CSXS.6</code></li>
+</ul>
 <p>将 <code>PlayerDebugMode</code> 设置为 <code>1</code></p>
 <h3 id="macos">macOS</h3><p>终端输入: ( 同样高版本类推 )</p>
 <p><code>defaults write com.adobe.CSXS.6 PlayerDebugMode 1</code></p>
@@ -102,7 +104,9 @@ Adobe CEP 扩展 - Recordum
 <p>注意最终插件 xxx 放入目录最终应该存在 <code>/extensions/xxx/index.html</code></p>
 <h3 id="启用">启用</h3><p>重启 photoshop，选择 &quot;Window&quot; → &quot;Extensions&quot; → &quot;xxx&quot; 启用 </p>
 <h2 id="参考文章">参考文章</h2><ul>
-<li><a href="http://nullice.com/archives/1741">Adobe CEP 扩展开发教程 「 4 」签名与打包</a></li><li><a href="http://nullice.com/archives/1665">Adobe CEP 扩展开发教程 「 1 」Hello World!</a></li></ul>
+<li><a href="http://nullice.com/archives/1741">Adobe CEP 扩展开发教程 「 4 」签名与打包</a></li>
+<li><a href="http://nullice.com/archives/1665">Adobe CEP 扩展开发教程 「 1 」Hello World!</a></li>
+</ul>
 </div>
   <div class="comments"><div id="disqus_thread"></div></div>
 </div>
