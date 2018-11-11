@@ -51,8 +51,8 @@ Pavane - Recordum
 <span>2</span>
 </pre>
               </td>
-              <td class="code"><pre><span class="hljs-meta">$</span><span class="bash"> npm i pavane -D <span class="hljs-comment"># 作为模块使用</span></span>
-<span class="hljs-meta">$</span><span class="bash"> npm i pavane -g <span class="hljs-comment"># 全局 CLI 使用</span></span></pre></td>
+              <td class="code"><pre>$ <span class="hljs-built_in">npm</span> i pavane -D <span class="hljs-comment"># 作为模块使用</span>
+$ <span class="hljs-built_in">npm</span> i pavane -g <span class="hljs-comment"># 全局 CLI 使用</span></pre></td>
             </tr>
           </tbody>
         </table>
@@ -197,13 +197,13 @@ server.start(<span class="hljs-number">2222</span>) <span class="hljs-comment">/
 <span>7</span>
 </pre>
               </td>
-              <td class="code"><pre><span class="hljs-meta">$</span><span class="bash"> pavane <span class="hljs-comment"># 默认使用，当前目录作为监听文件变化目录，同时也作为静态服务器目录</span></span>
-<span class="hljs-meta">$</span><span class="bash"> pavane -p 2000 <span class="hljs-comment"># 自定义端口</span></span>
-<span class="hljs-meta">$</span><span class="bash"> pavane -c <span class="hljs-comment"># 使用配置启动</span></span>
-<span class="hljs-meta">$</span><span class="bash"> pavane -w src -s dist <span class="hljs-comment"># 设置监听目录 src，静态 server 目录 dist</span></span>
-<span class="hljs-meta">
-#</span><span class="bash"> pavane 可以简写为 pv</span>
-<span class="hljs-meta">$</span><span class="bash"> pv -p 2000</span></pre></td>
+              <td class="code"><pre>$ pavane # 默认使用，当前目录作为监听文件变化目录，同时也作为静态服务器目录
+$ pavane -p 2000 # 自定义端口
+$ pavane -c # 使用配置启动
+$ pavane -w src -s dist # 设置监听目录 src，静态<span class="hljs-built_in"> server </span>目录 dist
+
+<span class="hljs-comment"># pavane 可以简写为 pv</span>
+$ pv -p 2000</pre></td>
             </tr>
           </tbody>
         </table>
